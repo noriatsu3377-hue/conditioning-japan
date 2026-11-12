@@ -420,3 +420,14 @@ body.is-locked { overflow: hidden; }
 .quote::after { margin: var(--sp-3) auto 0; }
 
 .err { min-height: 60vh; display: grid; align-content: center; }
+
+/* 零式 2027 年間セミナー一覧（LPと共通） */
+.sem-list { margin-top: var(--sp-3); border-top: 1px solid var(--line); display: grid; }
+.sem-list li { display: grid; grid-template-columns: 3rem minmax(0, 1fr); align-items: baseline; border-bottom: 1px solid var(--line); }
+.sem-list a { display: grid; gap: 0.2em; padding: 1.1em 2rem 1.1em 0; text-decoration: none; position: relative; }
+.sem-list a::after { content: "→"; position: absolute; right: 0.4rem; top: 50%; transform: translateY(-50%); color: var(--gold); font-family: var(--en); transition: transform 0.3s var(--ease); }
+.sem-list a:hover::after { transform: translate(5px, -50%); }
+.sem-list a:hover .sem-name { color: var(--gold); }
+.sem-name { font-family: var(--serif); letter-spacing: 0.08em; transition: color 0.3s; }
+.sem-date { font-size: var(--fs-xs); color: var(--text-sub); }
+@media (min-width: 900px) { .sem-list { grid-template-columns: 1fr 1fr; column-gap: var(--sp-5); } }
