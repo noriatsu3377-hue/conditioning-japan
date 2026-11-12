@@ -451,3 +451,4 @@ body.is-locked { overflow: hidden; }
 .wide-band { margin: var(--sp-4) 0 0; }
 .wide-band img { aspect-ratio: 21 / 9; }
 @media (max-width: 767px) { .wide-band img { aspect-ratio: 16 / 10; } }
+.wide-band img { object-position: center 30%; }
