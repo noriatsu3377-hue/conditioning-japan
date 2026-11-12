@@ -448,3 +448,6 @@ body.is-locked { overflow: hidden; }
 .course-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3px; margin-top: calc(var(--sp-2) * -0.6); }
 .course-strip img { width: 100%; aspect-ratio: 1; object-fit: cover; filter: grayscale(0.5) brightness(0.85); transition: filter 0.5s var(--ease); }
 .course:hover .course-strip img { filter: grayscale(0.1); }
+.wide-band { margin: var(--sp-4) 0 0; }
+.wide-band img { aspect-ratio: 21 / 9; }
+@media (max-width: 767px) { .wide-band img { aspect-ratio: 16 / 10; } }
