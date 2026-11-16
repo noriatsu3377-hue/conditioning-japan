@@ -452,3 +452,8 @@ body.is-locked { overflow: hidden; }
 .wide-band img { aspect-ratio: 21 / 9; }
 @media (max-width: 767px) { .wide-band img { aspect-ratio: 16 / 10; } }
 .wide-band img { object-position: center 30%; }
+
+/* 目的から探すカードの写真 */
+.path-photo { display: block; overflow: hidden; margin-bottom: 0.6em; }
+.path-photo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: grayscale(0.4); transition: filter 0.5s var(--ease), transform 0.6s var(--ease); }
+.path:hover .path-photo img { filter: none; transform: scale(1.03); }
