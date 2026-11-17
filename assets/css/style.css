@@ -468,3 +468,8 @@ body.is-locked { overflow: hidden; }
 .apply-deadline { font-size: var(--fs-xs); }
 .apply-sub { margin: var(--sp-2) 0 0; font-size: var(--fs-xs); opacity: 0.8; }
 .apply-card { margin: var(--sp-3) 0; }
+
+/* logo image */
+.wordmark-logo { display: block; height: 26px; width: auto; }
+.wordmark-footer .wordmark-logo, .site-footer .wordmark-logo { height: 34px; }
+.wordmark-logo + .wordmark-ja { margin-top: 5px; }
