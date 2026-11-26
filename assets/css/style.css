@@ -473,3 +473,11 @@ body.is-locked { overflow: hidden; }
 .wordmark-logo { display: block; height: 26px; width: auto; }
 .wordmark-footer .wordmark-logo, .site-footer .wordmark-logo { height: 34px; }
 .wordmark-logo + .wordmark-ja { margin-top: 5px; }
+
+/* 悩みの訴求（2026-11-26） */
+.pain-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.pain-list li { border: 1px solid var(--line, rgba(0,0,0,.12)); padding: 14px 16px 14px 40px; position: relative; line-height: 1.7; }
+.pain-list li::before { content: "？"; position: absolute; left: 14px; top: 13px; color: var(--accent-text); }
+.pain-answer { margin-top: var(--sp-3); text-align: center; line-height: 1.9; }
+.pain-answer strong { color: var(--accent-text); }
+@media (max-width: 720px) { .pain-list { grid-template-columns: 1fr; } }
